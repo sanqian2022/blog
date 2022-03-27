@@ -1,0 +1,140 @@
+cache:
+  enable: true
+
+minify: true
+
+scheme: Gemini
+
+favicon:
+  small: /favicon.ico #网站的图标设定
+  medium: /favicon.ico
+  apple_touch_icon: /favicon.ico
+  safari_pinned_tab: /favicon.ico
+
+menu:
+  home: / || fa fa-home
+  archives: /archives/ || fa fa-archive
+
+avatar:
+  url: /avatar.jpeg
+  rounded: true
+
+social:
+  GitHub: https://github.com/sanqian2022 || fab fa-github
+  E-Mail: mailto:[azy2016@aliyun.com] || fa fa-envelope
+
+social_icons:
+  enable: true
+  E-Mail: mail-bulk # 自定义图标，图标名字在https://fontawesome.com上搜索
+  Github: github
+  icons_only: true # 只显示图标
+  transition: true
+
+toc:
+  enable: true
+  # Automatically add list number to toc.
+  number: true # 显示数字
+  # If true, all words will placed on next lines if header width longer then sidebar width.
+  wrap: true # 不折叠
+  # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
+  expand_all: false # 只显示活跃部分的TOC
+  # Maximum heading depth of generated toc.
+  max_depth: 3
+
+# Automatically excerpt description in homepage as preamble text.
+excerpt_description: false # 我选择自行写前言，抛弃description字段
+
+# Read more button
+# If true, the read more button will be displayed in excerpt section.
+read_more_btn: true # 显示‘阅读更多‘按钮
+
+# Post meta display settings
+post_meta:
+  item_text: true
+  created_at: true # 显示文章创建时间
+  updated_at: # 显示文章更新时间
+    enable: true
+    another_day: true
+  categories: true # 显示文章分类
+
+tag_icon: true # 使用图标来指示文章底部的标签
+
+symbols_count_time:
+  separated_meta: true
+  item_text_total: false
+
+codeblock:
+  # Code Highlight theme
+  # All available themes: https://theme-next.js.org/highlight/
+  #
+  # modify the config file in hexo-site folder to decide which engine to choose
+  #
+  # https://theme-next.js.org/highlight/
+  theme:
+    light: a11y-dark
+    dark: a11y-dark
+  prism:
+    light: prism
+    dark: prism-dark
+  # Add copy button on codeblock
+  copy_button:
+    enable: true
+    # Available values: default | flat | mac
+    style: mac
+
+back2top:
+  enable: true # 开启返回顶部按钮
+  # Back to top in sidebar.
+  sidebar: true # 集成到sidebar中
+  # Scroll percent label in b2t button.
+  scrollpercent: true # 显示滚动百分比
+
+# Reading progress bar
+reading_progress:
+  enable: true # 开启阅读进度条
+  # Available values: left | right
+  start_at: left # 从左侧开始生长
+  # Available values: top | bottom
+  position: top # 进度条位置设定在顶部
+  reversed: false
+  color: "#008086" # 自定义颜色
+  height: 2.5px # 进度条的“厚度”
+
+font:
+  enable: true
+
+  # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
+  host: //fonts.loli.net
+
+  # Font options:
+  # `external: true` will load this font family from `host` above.
+  # `family: Times New Roman`. Without any quotes.
+  # `size: x.x`. Use `em` as unit. Default: 1 (16px)
+
+  # Global font settings used for all elements inside <body>.
+  global:
+    external: true
+    family: Noto Sans SC
+    size:
+
+  # Font settings for <code> and code blocks.
+  codes:
+    external: true
+    family: Roboto Mono
+
+pjax: true
+
+# Local Search
+# Dependencies: https://github.com/next-theme/hexo-generator-searchdb
+local_search:
+  enable: true
+  # If auto, trigger search by changing input.
+  # If manual, trigger search by pressing enter key or search button.
+  trigger: auto
+  # Show top n results per article, show all results by setting to -1
+  top_n_per_article: 1
+  # Unescape html strings to the readable one.
+  unescape: false
+  # Preload the search data when the page loads.
+  preload: true # 预加载搜索数据
+

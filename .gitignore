@@ -1,0 +1,4 @@
+_config.yml
+**/node_modules
+.github
+public/
