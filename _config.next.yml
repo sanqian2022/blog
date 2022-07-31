@@ -13,8 +13,9 @@ favicon:
 
 menu:
   home: / || fa fa-home
+  tags: /tags || fa fa-tags
   archives: /archives/ || fa fa-archive
-
+  categories: /categories || fa fa-th
 avatar:
   url: /avatar.jpeg
   rounded: true
@@ -39,10 +40,10 @@ toc:
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
   expand_all: false # 只显示活跃部分的TOC
   # Maximum heading depth of generated toc.
-  max_depth: 3
+  max_depth: 6
 
 # Automatically excerpt description in homepage as preamble text.
-excerpt_description: false # 我选择自行写前言，抛弃description字段
+excerpt_description: true # 我选择自行写前言，抛弃description字段
 
 # Read more button
 # If true, the read more button will be displayed in excerpt section.
@@ -136,5 +137,6 @@ local_search:
   # Unescape html strings to the readable one.
   unescape: false
   # Preload the search data when the page loads.
-  preload: true # 预加载搜索数据
+  preload: false # 预加载搜索数据
 
+baidu_analytics: f44a18c6d2666ef48aa1317e2c67de3c
